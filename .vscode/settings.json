@@ -1,0 +1,8 @@
+{
+    "a-file-icon-vscode.folderColor": "#999",
+    "a-file-icon-vscode.activeIconPacks": [
+        "next",
+        "vue",
+        "rails"
+    ]
+}
