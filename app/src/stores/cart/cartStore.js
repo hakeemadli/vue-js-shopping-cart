@@ -6,6 +6,7 @@ import removeItem from './actions/removeItem'
 import updateQuantity from './actions/updateQuantity'
 import clearCart from './actions/clearCart'
 import fetchProduct from './actions/fetchProduct'
+import fetchProductList from './actions/fetchProductList'
 import createCartState from './state'
 
 
@@ -18,7 +19,8 @@ export const useCartStore = defineStore(
       removeItem,
       updateQuantity,
       clearCart,
-      fetchProduct
+      fetchProduct,
+      fetchProductList
     }
 
   })

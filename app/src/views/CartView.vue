@@ -93,10 +93,4 @@ h1 {
 .checkout-btn:active {
   transform: translateY(0);
 }
-
-.clear-btn {
-  background: #e74c3c;
-  color: white;
-  margin-right: 10px;
-}
 </style>

@@ -42,6 +42,7 @@
 
       <div class="cart-actions">
         <button @click="cart.clearCart" class="clear-btn">Clear Cart</button>
+        <button class="checkout-btn"></button>
       </div>
     </div>
   </div>
@@ -212,9 +213,5 @@ export default {
   color: white;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-.clear-btn:hover {
-  background: #34495e;
 }
 </style>

@@ -55,13 +55,14 @@ export default {
       loading.value = true
       error.value = null
       try {
-        const response = await fetch(`https://fakestoreapi.com/products/${props.productId}`)
-        if (!response.ok) {
-          throw new Error('Product not found')
-        }
-        product.value = await response.json()
+        product.value = await cart.fetchProduct(props.productId)
       } catch (err) {
         error.value = 'Failed to load product details'
+        toast('Failed to load products details', {
+                    type: 'error',
+                    autoClose: 2000,
+                    position: toast.POSITION.TOP_RIGHT
+                })
         console.error(err)
       } finally {
         loading.value = false

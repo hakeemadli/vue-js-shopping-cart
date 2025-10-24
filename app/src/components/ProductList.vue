@@ -28,10 +28,15 @@ export default {
 
         const loadProducts = async () => {
             try {
-                const response = await fetch('https://fakestoreapi.com/products')
-                products.value = await response.json()
+                products.value = await cart.fetchProductList()
+                
             } catch (error) {
                 console.error('Failed to load products:', error)
+                toast('Failed to load products', {
+                    type: 'error',
+                    autoClose: 2000,
+                    position: toast.POSITION.TOP_RIGHT
+                })
             } finally {
                 loading.value = false
             }

@@ -1,6 +1,6 @@
-export default async function fetchProduct(pid) {
+export default async function fetchProductList() {
     try {
-        const response = await fetch(`https://fakestoreapi.com/products/${pid}`)
+        const response = await fetch(`https://fakestoreapi.com/products/`)
         
         if (!response.ok) {
             throw new Error('Product not found')

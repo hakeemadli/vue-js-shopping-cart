@@ -22,12 +22,13 @@ with additional implementation:
 ## Future Improvement :
 - Adding Tailwind CSS or ShadCN for styling
 - Proper code refactoring
-- Githud action (learning how CI/CD works/implemented)
+- Adding checkout pages
+- Github action (learning how CI/CD works/implemented)
 
 
 ## References
 - [Vue official - Documentations](https://vuejs.org/guide/)
-- [Solid JS - Introduction to reactivity(Personal Recommendation)](https://docs.solidjs.com/concepts/intro-to-reactivity)
+- [Solid JS - Introduction to reactivity (Personal Recommendation)](https://docs.solidjs.com/concepts/intro-to-reactivity)
 
 
 
